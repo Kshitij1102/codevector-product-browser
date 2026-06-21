@@ -9,7 +9,7 @@ export default function Home() {
 
   async function loadProducts(reset = false) {
     let url =
-      "http://localhost:5000/products?limit=20";
+      "https://codevector-product-browser-production.up.railway.app/products?limit=20";
 
     if (cursor && !reset) {
       url += `&cursor=${cursor}`;
